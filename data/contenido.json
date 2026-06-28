@@ -1,0 +1,871 @@
+{
+  "titulo": "Cartilla Digital Interactiva",
+  "subtitulo": "Aprende jugando, creando, leyendo y explorando",
+  "descripcion": "Uso pedagógico de las TIC y actividades rectoras en la educación inicial.",
+  "indice": [
+    {
+      "id": "reflexion",
+      "titulo": "Reflexión inicial",
+      "icono": "💡"
+    },
+    {
+      "id": "tic",
+      "titulo": "Marco conceptual",
+      "icono": "🧩"
+    },
+    {
+      "id": "rectoras",
+      "titulo": "Actividades rectoras",
+      "icono": "🎲"
+    },
+    {
+      "id": "pertinencia",
+      "titulo": "Pertinencia pedagógica",
+      "icono": "🌱"
+    },
+    {
+      "id": "juego-1",
+      "titulo": "Actividades de juego",
+      "icono": "🤸"
+    },
+    {
+      "id": "arte-1",
+      "titulo": "Actividades de arte",
+      "icono": "🎨"
+    },
+    {
+      "id": "literatura-1",
+      "titulo": "Literatura",
+      "icono": "📚"
+    },
+    {
+      "id": "exploracion-1",
+      "titulo": "Exploración del medio",
+      "icono": "🔎"
+    },
+    {
+      "id": "diversidad",
+      "titulo": "Inclusión",
+      "icono": "🤝"
+    },
+    {
+      "id": "imprimibles",
+      "titulo": "Recursos imprimibles",
+      "icono": "🖨️"
+    },
+    {
+      "id": "glosario",
+      "titulo": "Glosario",
+      "icono": "📖"
+    },
+    {
+      "id": "referencias",
+      "titulo": "Referencias APA",
+      "icono": "📑"
+    }
+  ],
+  "paginas": [
+    {
+      "id": "portada",
+      "seccion": "Inicio",
+      "tipo": "portada",
+      "titulo": "Cartilla Digital Interactiva",
+      "subtitulo": "Aprende jugando, creando, leyendo y explorando",
+      "lema": "Uso pedagógico de las TIC y actividades rectoras en la educación inicial",
+      "pie": "Colegio Santa Teresita de la América · Educación infantil",
+      "imagen": "assets/imagenes/portada.jpg"
+    },
+    {
+      "id": "presentacion",
+      "seccion": "Presentación",
+      "tipo": "estandar",
+      "titulo": "Presentación",
+      "subtitulo": "Una cartilla para aprender con juego, arte, literatura y exploración del medio",
+      "imagen": "assets/imagenes/presentacion.jpg",
+      "bloques": [
+        {
+          "t": "p",
+          "texto": "Esta cartilla propone experiencias de aprendizaje mediadas por TIC, pensadas para niñas de educación inicial del Colegio Santa Teresita de la América. Las actividades parten de vivencias reales del aula: lectura de cuentos, expresión artística, juego colaborativo, trabajo sensorial, exploración de la naturaleza y uso guiado de recursos digitales."
+        },
+        {
+          "t": "p",
+          "texto": "El propósito es que la tecnología no reemplace la interacción humana, sino que acompañe la curiosidad, la comunicación, la inclusión, la creatividad y la participación activa de las infancias."
+        },
+        {
+          "t": "chips",
+          "items": [
+            "Editable",
+            "Interactiva",
+            "Imprimible"
+          ]
+        },
+        {
+          "t": "callout",
+          "texto": "Usa los botones del índice para navegar por cada apartado."
+        }
+      ]
+    },
+    {
+      "id": "indice",
+      "seccion": "Índice",
+      "tipo": "indice",
+      "titulo": "Índice interactivo",
+      "subtitulo": "Haz clic en cada sección para navegar por la cartilla",
+      "imagen": "assets/imagenes/emociones.jpg",
+      "nota": "Ruta sugerida: primero leer la reflexión, luego revisar los conceptos y finalmente aplicar las actividades."
+    },
+    {
+      "id": "reflexion",
+      "seccion": "Reflexión inicial",
+      "tipo": "reflexion",
+      "titulo": "Reflexión inicial",
+      "subtitulo": "Cultura de la educación inicial y sentido de las actividades rectoras",
+      "imagen": "assets/imagenes/reflexion.jpg",
+      "bloques": [
+        {
+          "t": "h",
+          "texto": "¿Qué se entiende por cultura de la educación inicial?"
+        },
+        {
+          "t": "p",
+          "texto": "Es una forma de comprender a las niñas y los niños como sujetos activos, sensibles, curiosos y capaces de construir significados desde sus experiencias. Esta cultura reconoce el cuidado, el afecto, la participación, el juego y la exploración como condiciones necesarias para aprender y desarrollarse integralmente."
+        }
+      ],
+      "reflexionAmpliada": {
+        "titulo": "Reflexión ampliada",
+        "secciones": [
+          {
+            "h": "¿Qué se entiende por cultura de la educación inicial?",
+            "p": "Es una forma de comprender a las niñas y los niños como sujetos activos, sensibles, curiosos y capaces de construir significados desde sus experiencias. Esta cultura reconoce el cuidado, el afecto, la participación, el juego y la exploración como condiciones necesarias para aprender y desarrollarse integralmente."
+          },
+          {
+            "h": "¿Cómo aportan las actividades rectoras?",
+            "p": "El juego, el arte, la literatura y la exploración del medio permiten que los niños representen lo que viven, expresen emociones, hagan preguntas, creen soluciones y resignifiquen su realidad. A través de estas experiencias se favorece el lenguaje, la motricidad, la convivencia, la autonomía y la imaginación."
+          },
+          {
+            "h": "¿Y las TIC?",
+            "p": "Desde una mirada tecnopedagógica, las TIC se integran con intención educativa: acompañan la mediación docente, amplían formas de expresión y facilitan experiencias inclusivas, contextualizadas y significativas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tic",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Aspectos conceptuales: TIC",
+      "subtitulo": "Tecnologías al servicio del aprendizaje y la participación",
+      "imagen": "assets/imagenes/tic.jpg",
+      "bloques": [
+        {
+          "t": "h",
+          "texto": "TIC en educación inicial"
+        },
+        {
+          "t": "p",
+          "texto": "Son herramientas digitales que pueden apoyar la comunicación, la creación, la búsqueda de información, el juego guiado y la documentación de experiencias. En primera infancia requieren acompañamiento adulto, tiempos adecuados y sentido pedagógico."
+        },
+        {
+          "t": "h",
+          "texto": "Uso responsable"
+        },
+        {
+          "t": "p",
+          "texto": "La mediación docente y familiar orienta qué se observa, para qué se usa, cuánto tiempo se dedica y cómo se conversa sobre lo vivido. La tecnología debe estar al servicio del vínculo, el cuidado y la inclusión."
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Idea clave",
+          "texto": "No se trata de “usar pantallas”, sino de diseñar experiencias con intención pedagógica."
+        }
+      ]
+    },
+    {
+      "id": "tecnopedagogia",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Tecnopedagogía",
+      "subtitulo": "Diseño de experiencias significativas, inclusivas y contextualizadas",
+      "imagen": "assets/imagenes/tecnopedagogia-b.jpg",
+      "imagenSecundaria": "assets/imagenes/tecnopedagogia-a.jpg",
+      "bloques": [
+        {
+          "t": "h",
+          "texto": "¿Qué implica?"
+        },
+        {
+          "t": "p",
+          "texto": "Articular objetivos, estrategias, recursos, evaluación y mediación docente para que la tecnología tenga sentido en la experiencia de aprendizaje."
+        },
+        {
+          "t": "h",
+          "texto": "En el aula infantil"
+        },
+        {
+          "t": "p",
+          "texto": "La tecnopedagogía se concreta cuando las niñas escuchan, crean, graban, observan, comparan, juegan, narran o documentan una experiencia usando recursos digitales de forma segura y guiada."
+        },
+        {
+          "t": "lista",
+          "items": [
+            "Mediación afectiva y segura.",
+            "Actividades cortas y activas.",
+            "Trabajo colaborativo y participación.",
+            "Adaptaciones para distintas formas de aprender."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fundamentacion",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Fundamentación teórica",
+      "subtitulo": "Tecnopedagogía con sentido pedagógico, ético e inclusivo",
+      "bloques": [
+        {
+          "t": "tarjetas",
+          "items": [
+            {
+              "titulo": "1. Tecnopedagogía",
+              "texto": "No es usar pantallas por usarlas: es articular propósito de aprendizaje, mediación docente, recursos, participación y evaluación para que la experiencia sea significativa."
+            },
+            {
+              "titulo": "2. Mediación docente",
+              "texto": "El MEN orienta un uso de internet responsable y creativo, acompañado por adultos que dialogan, guían, cuidan tiempos y promueven ciudadanía digital."
+            },
+            {
+              "titulo": "3. Tecnología inclusiva",
+              "texto": "La UNESCO plantea que la tecnología educativa debe ser pertinente, equitativa, ética y centrada en las personas; debe complementar el vínculo docente-niña."
+            },
+            {
+              "titulo": "4. Primera infancia",
+              "texto": "El CERLALC recuerda que la lectura digital debe acompañarse de conversación, juego, afecto y experiencias corporales; no debe desplazar la interacción humana."
+            },
+            {
+              "titulo": "5. Coherencia didáctica",
+              "texto": "Cada recurso digital se elige porque ayuda a observar, escuchar, narrar, crear, explorar o documentar; si no fortalece la experiencia, se reemplaza."
+            }
+          ]
+        },
+        {
+          "t": "callout",
+          "texto": "Las TIC fortalecen el aprendizaje cuando se usan en tiempos cortos, con acompañamiento afectivo, participación activa, accesibilidad y relación directa con juego, arte, literatura y exploración."
+        }
+      ]
+    },
+    {
+      "id": "articulacion",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Articulación teórico-práctica",
+      "subtitulo": "Referentes conceptuales",
+      "bloques": [
+        {
+          "t": "tabla",
+          "encabezados": [
+            "Referente",
+            "Actividades",
+            "Evidencia pedagógica"
+          ],
+          "filas": [
+            [
+              "Juego y socioemocionalidad",
+              "Ronda digital de emociones",
+              "Nombra emociones, imita gestos y expresa cómo se siente."
+            ],
+            [
+              "Arte y expresión",
+              "Galería digital de dibujos",
+              "Crea, describe su obra y escucha las de sus compañeras."
+            ],
+            [
+              "Literatura y lenguaje",
+              "Hora del cuento interactiva",
+              "Predice, narra, amplía vocabulario y participa con apoyos visuales."
+            ],
+            [
+              "Exploración del medio",
+              "Exploradoras de la naturaleza",
+              "Observa, registra con foto o dibujo y comunica hallazgos del entorno."
+            ],
+            [
+              "Inclusión y accesibilidad",
+              "Pictogramas, audios y opciones",
+              "Participa hablando, señalando, dibujando, moviéndose o eligiendo tarjetas."
+            ]
+          ]
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Criterio de calidad",
+          "texto": "La actividad es tecnopedagógica cuando une objetivo, mediación, recurso, participación e inclusión; no cuando solo agrega una pantalla."
+        }
+      ]
+    },
+    {
+      "id": "diversidad",
+      "seccion": "Inclusión",
+      "tipo": "estandar",
+      "titulo": "Diversidad e inclusión",
+      "subtitulo": "Ajustes para necesidades, intereses y estilos de aprendizaje",
+      "bloques": [
+        {
+          "t": "tarjetas",
+          "items": [
+            {
+              "titulo": "Antes de iniciar",
+              "texto": "Agenda visual con tres pasos, canción de bienvenida, anticipación de turnos, elección de materiales y normas con pictogramas."
+            },
+            {
+              "titulo": "Durante la actividad",
+              "texto": "Apoyo en parejas, instrucciones cortas, tiempos flexibles, pausas activas, objetos sensoriales y posibilidad de observar antes de participar."
+            },
+            {
+              "titulo": "Formas de responder",
+              "texto": "Hablar, señalar, dibujar, dramatizar, elegir tarjetas, grabar un audio corto o mostrar una fotografía. Se valora la intención comunicativa."
+            },
+            {
+              "titulo": "Apoyos concretos",
+              "texto": "Pictogramas, letra grande, contraste visual, audios breves, mouse adaptado si se requiere, rincón de calma y materiales manipulativos."
+            },
+            {
+              "titulo": "Intereses y ritmos",
+              "texto": "Retos por niveles: básico, acompañado y creativo. Cada niña escoge cómo participar sin ser comparada con las demás."
+            },
+            {
+              "titulo": "Familias",
+              "texto": "Enviar una versión imprimible o audioguía para casa, pedir una foto o un relato familiar y mantener comunicación sobre necesidades particulares."
+            }
+          ]
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Principio de inclusión",
+          "texto": "La meta no es que todas hagan exactamente lo mismo, sino que todas participen con apoyos, seguridad emocional y oportunidades reales de expresión."
+        }
+      ]
+    },
+    {
+      "id": "recursos-digitales",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Recursos digitales",
+      "subtitulo": "Pertinencia pedagógica, accesibilidad y coherencia con los objetivos",
+      "bloques": [
+        {
+          "t": "tarjetas",
+          "items": [
+            {
+              "titulo": "Video o audio breve",
+              "texto": "Motiva, introduce vocabulario y activa la escucha. Máximo de 3 a 5 minutos."
+            },
+            {
+              "titulo": "Cámara del celular o tableta",
+              "texto": "Documenta procesos, no solo resultados. Permite crear galerías y reconocer avances individuales."
+            },
+            {
+              "titulo": "Mural o presentación digital",
+              "texto": "Socializa producciones, fortalece el lenguaje oral y da visibilidad al trabajo."
+            },
+            {
+              "titulo": "Juego interactivo sencillo",
+              "texto": "Refuerza la asociación, la memoria y la atención."
+            },
+            {
+              "titulo": "Temporizador visual",
+              "texto": "Anticipa cambios, regula tiempos y disminuye la ansiedad durante turnos o transiciones."
+            },
+            {
+              "titulo": "Pictogramas digitales o imprimibles",
+              "texto": "Facilitan la comprensión, la autonomía y la participación de niñas con distintas formas de comunicación."
+            }
+          ]
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Criterios de selección",
+          "texto": "Seguro · accesible · sin publicidad · comprensible · corto · guiado por la docente · relacionado con juego, arte, literatura o exploración."
+        }
+      ]
+    },
+    {
+      "id": "ajustes",
+      "seccion": "Marco conceptual",
+      "tipo": "estandar",
+      "titulo": "Ajustes incorporados",
+      "subtitulo": "Síntesis para responder a la retroalimentación recibida",
+      "bloques": [
+        {
+          "t": "tarjetas",
+          "items": [
+            {
+              "titulo": "Profundización teórica",
+              "texto": "Se amplía la comprensión de la tecnopedagogía desde la mediación docente, el uso responsable de internet, la inclusión digital y la educación inicial centrada en el vínculo."
+            },
+            {
+              "titulo": "Articulación con actividades",
+              "texto": "Se explica cómo cada actividad de juego, arte, literatura y exploración usa recursos digitales para fortalecer objetivos concretos: expresión, lenguaje, creatividad, cooperación y observación."
+            },
+            {
+              "titulo": "Diversidad e inclusión",
+              "texto": "Se incorporan apoyos específicos: agenda visual, pictogramas, respuestas alternativas, tiempos flexibles, parejas de apoyo, rincón de calma y recursos manipulativos."
+            },
+            {
+              "titulo": "Recursos digitales justificados",
+              "texto": "La selección de videos, audios, cámara, mural, juegos y temporizador se fundamenta en pertinencia pedagógica, accesibilidad, seguridad y coherencia con los objetivos."
+            },
+            {
+              "titulo": "Cierre",
+              "texto": "La tecnología se plantea como apoyo al aprendizaje activo y no como sustituto del juego, la interacción, el afecto y la mediación docente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rectoras",
+      "seccion": "Actividades rectoras",
+      "tipo": "estandar",
+      "titulo": "Actividades rectoras",
+      "subtitulo": "Ejes para el desarrollo integral en la educación inicial",
+      "imagen": "assets/imagenes/actividades-rectoras.jpg",
+      "bloques": [
+        {
+          "t": "tarjetas",
+          "items": [
+            {
+              "titulo": "Juego",
+              "texto": "Permite imaginar, negociar reglas, resolver problemas y relacionarse con otros."
+            },
+            {
+              "titulo": "Arte",
+              "texto": "Favorece la expresión corporal, plástica, musical y emocional."
+            },
+            {
+              "titulo": "Literatura",
+              "texto": "Acerca a los niños al lenguaje, la escucha, la narración y la imaginación."
+            },
+            {
+              "titulo": "Exploración del medio",
+              "texto": "Invita a observar, preguntar, experimentar y comprender el entorno."
+            }
+          ]
+        },
+        {
+          "t": "callout",
+          "texto": "Estas actividades se integran con TIC cuando la docente propone recursos digitales sencillos, seguros y con propósito."
+        }
+      ]
+    },
+    {
+      "id": "pertinencia",
+      "seccion": "Pertinencia pedagógica",
+      "tipo": "estandar",
+      "titulo": "Pertinencia de la cartilla",
+      "subtitulo": "Valores, actitudes y aportes al desarrollo infantil",
+      "imagen": "assets/imagenes/portada.jpg",
+      "bloques": [
+        {
+          "t": "h",
+          "texto": "Actitudes y valores promovidos"
+        },
+        {
+          "t": "p",
+          "texto": "Participación, respeto, empatía, alegría, autonomía, creatividad, colaboración, cuidado del otro y sentido de pertenencia por el colegio y el entorno."
+        },
+        {
+          "t": "h",
+          "texto": "Aportes al desarrollo infantil"
+        },
+        {
+          "t": "p",
+          "texto": "Las experiencias diseñadas favorecen el lenguaje oral, la expresión emocional, la coordinación motriz, la atención, el pensamiento creativo, la socialización y la resolución de problemas en situaciones reales y significativas."
+        },
+        {
+          "t": "h",
+          "texto": "Contextualización"
+        },
+        {
+          "t": "p",
+          "texto": "Las fotografías del aula, la sala de sistemas, los espacios de lectura, las actividades artísticas y la exploración al aire libre muestran experiencias cercanas a la realidad sociocultural de las niñas."
+        }
+      ]
+    },
+    {
+      "id": "juego-1",
+      "seccion": "Actividades de juego",
+      "tipo": "actividad",
+      "titulo": "Ronda digital de emociones",
+      "subtitulo": "Actividad 1 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Juego",
+      "imagen": "assets/imagenes/emociones.jpg",
+      "objetivo": "Reconocer emociones básicas y expresar cómo se sienten mediante juego corporal, diálogo y recursos visuales.",
+      "descripcion": "La docente presenta caritas o emociones en la pantalla o en tarjetas. Cada niña imita una emoción, cuenta cuándo la ha sentido y participa en una ronda de “adivina la emoción”.",
+      "recursos": "Video corto sobre emociones, tarjetas imprimibles, música suave y tablero digital o televisor.",
+      "inclusion": "Usar pictogramas, permitir responder con gesto o dibujo, anticipar turnos y ofrecer un espacio tranquilo para quien lo necesite."
+    },
+    {
+      "id": "juego-2",
+      "seccion": "Actividades de juego",
+      "tipo": "actividad",
+      "titulo": "Construimos retos en equipo",
+      "subtitulo": "Actividad 2 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Juego",
+      "imagen": "assets/imagenes/tecnopedagogia-b.jpg",
+      "objetivo": "Estimular la cooperación, el pensamiento lógico y la motricidad fina mediante construcciones con bloques y retos guiados.",
+      "descripcion": "En pequeños grupos, las niñas reciben un reto: hacer un camino, una torre o una figura. Luego fotografían su construcción y explican cómo la realizaron.",
+      "recursos": "Bloques de madera, cámara del celular o tableta, galería digital de fotos y temporizador visual.",
+      "inclusion": "Dar modelos visuales, formar grupos flexibles, permitir diferentes niveles de dificultad y valorar el proceso más que el resultado."
+    },
+    {
+      "id": "arte-1",
+      "seccion": "Actividades de arte",
+      "tipo": "actividad",
+      "titulo": "Pintura sensorial: mi huella",
+      "subtitulo": "Actividad 3 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Arte",
+      "imagen": "assets/imagenes/arte-pintura-sensorial.jpg",
+      "objetivo": "Potenciar la expresión artística y sensorial a través del uso de texturas, colores y movimientos libres.",
+      "descripcion": "Las niñas exploran harina, pintura lavable o espuma sobre una mesa protegida. Después observan sus marcas, conversan sobre lo que crearon y toman una foto de su obra.",
+      "recursos": "Pintura lavable, delantales, cámara y una aplicación simple de collage.",
+      "inclusion": "Ofrecer guantes o pinceles para niñas con sensibilidad táctil, permitir pausas y mantener instrucciones breves y visuales."
+    },
+    {
+      "id": "arte-2",
+      "seccion": "Actividades de arte",
+      "tipo": "actividad",
+      "titulo": "Galería digital de dibujos",
+      "subtitulo": "Actividad 4 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Arte",
+      "imagen": "assets/imagenes/reflexion.jpg",
+      "objetivo": "Favorecer la creatividad, la coordinación visomotora y el lenguaje al describir una producción artística propia.",
+      "descripcion": "Cada niña colorea o dibuja una imagen relacionada con el tema de clase. Luego se crea una galería digital con fotos y una frase dictada por cada niña.",
+      "recursos": "Hojas, colores, cámara, presentación digital y grabadora de voz para registrar frases cortas.",
+      "inclusion": "Permitir elegir materiales, usar agarres adaptados, ofrecer plantillas opcionales y aceptar respuestas orales, gestuales o gráficas."
+    },
+    {
+      "id": "literatura-1",
+      "seccion": "Literatura",
+      "tipo": "actividad",
+      "titulo": "Hora del cuento interactiva",
+      "subtitulo": "Actividad 5 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Literatura",
+      "imagen": "assets/imagenes/presentacion.jpg",
+      "objetivo": "Desarrollar la escucha, la imaginación, el vocabulario y la comprensión a partir de la lectura compartida.",
+      "descripcion": "La docente narra un cuento mostrando imágenes grandes. Durante la lectura, las niñas predicen qué pasará, imitan sonidos y responden preguntas sencillas.",
+      "recursos": "Cuento físico, audio breve, proyector o televisor, imágenes ampliadas y preguntas interactivas.",
+      "inclusion": "Ubicar a las niñas en círculo, usar lectura expresiva, repetir palabras clave y permitir la participación con tarjetas de respuesta."
+    },
+    {
+      "id": "literatura-2",
+      "seccion": "Literatura",
+      "tipo": "actividad",
+      "titulo": "Biblioteca viva de personajes",
+      "subtitulo": "Actividad 6 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Literatura",
+      "imagen": "assets/imagenes/actividades-rectoras.jpg",
+      "objetivo": "Fortalecer el lenguaje oral y el juego simbólico representando personajes de cuentos o historias del aula.",
+      "descripcion": "Las niñas eligen un personaje, usan accesorios sencillos y narran una frase: “yo soy...” o “mi personaje siente...”. Se toman fotos para un mural digital.",
+      "recursos": "Disfraces, cuentos, cámara, mural digital y audios cortos grabados por la docente.",
+      "inclusion": "Dar opciones de personaje, no obligar a hablar frente al grupo, permitir señalar imágenes y usar apoyos visuales para estructurar la frase."
+    },
+    {
+      "id": "exploracion-1",
+      "seccion": "Exploración del medio",
+      "tipo": "actividad",
+      "titulo": "Exploradoras de la naturaleza",
+      "subtitulo": "Actividad 7 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Exploración",
+      "imagen": "assets/imagenes/exploracion-naturaleza.jpg",
+      "objetivo": "Promover la observación, la curiosidad y el cuidado del medio mediante una salida de exploración segura.",
+      "descripcion": "En el patio o la zona verde de los POMOS, las niñas observan hojas, piedras, plantas y sonidos. Registran hallazgos con fotos y dibujos, y recogen elementos de la naturaleza para realizar un collage.",
+      "recursos": "Celular o tableta para fotos, lupa, ficha de exploración imprimible y audio de sonidos de la naturaleza.",
+      "inclusion": "Definir una ruta clara, usar parejas de apoyo, ofrecer tiempos de descanso y permitir registrar con dibujo, foto o palabra."
+    },
+    {
+      "id": "exploracion-2",
+      "seccion": "Exploración del medio",
+      "tipo": "actividad",
+      "titulo": "Laboratorio TIC del entorno",
+      "subtitulo": "Actividad 8 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Exploración",
+      "imagen": "assets/imagenes/tic.jpg",
+      "objetivo": "Reconocer elementos del entorno digital y natural mediante juegos de asociación y observación guiada.",
+      "descripcion": "En la sala de sistemas, las niñas usan un juego sencillo de arrastrar y soltar para relacionar partes del cuerpo, emociones, animales o elementos del entorno.",
+      "recursos": "Computador, mouse, juego interactivo (por ejemplo, Árbol ABC o Wordwall), pictogramas y apoyo de la docente.",
+      "inclusion": "Usar mouse adaptado si se requiere, trabajar en parejas, reducir distractores visuales y dar instrucciones paso a paso."
+    },
+    {
+      "id": "juego-3",
+      "seccion": "Actividades de juego",
+      "tipo": "actividad",
+      "titulo": "Circuito de movimiento y cooperación",
+      "subtitulo": "Actividad 9 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Juego",
+      "imagen": "assets/imagenes/juego-circuito.jpg",
+      "objetivo": "Estimular la coordinación motriz, la socialización y el respeto por las normas mediante el juego libre y dirigido en espacios seguros.",
+      "descripcion": "Las niñas participan en un circuito de movimiento con pelotas, túnel, turnos y pequeños retos. La docente orienta acuerdos de cuidado: esperar, ayudar, compartir y celebrar los logros de las compañeras.",
+      "recursos": "Piscina de pelotas, colchonetas, música, cámara del celular o tableta, temporizador visual y registro fotográfico de la experiencia.",
+      "inclusion": "Anticipar reglas con pictogramas, organizar turnos cortos, ofrecer apoyo físico si se requiere y permitir participar observando, guiando o realizando retos adaptados."
+    },
+    {
+      "id": "arte-3",
+      "seccion": "Actividades de arte",
+      "tipo": "actividad",
+      "titulo": "Retratos de identidad y color",
+      "subtitulo": "Actividad 10 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Arte",
+      "imagen": "assets/imagenes/arte-retratos.jpg",
+      "objetivo": "Favorecer la creatividad, la motricidad fina y la expresión de la identidad mediante el coloreado, la observación y la socialización de producciones propias.",
+      "descripcion": "Cada niña elabora una tarjeta para el Día de la Madre, elige colores, comenta qué representa y comparte con una compañera lo que más le gustó de su obra. Luego se organiza una galería digital con las fotos tomadas por la docente.",
+      "recursos": "Hojas impresas, colores, crayones, marcadores, cámara, presentación digital y grabadora de voz para registrar frases cortas de las niñas.",
+      "inclusion": "Ofrecer plantillas opcionales, materiales de fácil agarre, apoyo visual paso a paso y permitir expresar la obra hablando, señalando, mostrando o grabando un audio."
+    },
+    {
+      "id": "literatura-3",
+      "seccion": "Literatura",
+      "tipo": "actividad",
+      "titulo": "Lectura en círculo y biblioteca compartida",
+      "subtitulo": "Actividad 11 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Literatura",
+      "imagen": "assets/imagenes/literatura-circulo.jpg",
+      "objetivo": "Desarrollar el gusto por la lectura, la escucha activa, el vocabulario y la imaginación a través de encuentros literarios participativos.",
+      "descripcion": "En círculo, las niñas observan y exploran cuentos. La docente realiza preguntas, invita a anticipar personajes y permite que cada niña muestre una imagen o cuente una idea sobre el libro elegido.",
+      "recursos": "Cuentos físicos, audiocuento breve, imágenes ampliadas, cámara para documentar la biblioteca viva y mural digital de recomendaciones lectoras.",
+      "inclusion": "Ubicar los cuentos al alcance, usar lectura expresiva, repetir palabras clave, permitir señalar imágenes y respetar a quien prefiera escuchar antes de hablar."
+    },
+    {
+      "id": "exploracion-3",
+      "seccion": "Exploración del medio",
+      "tipo": "actividad",
+      "titulo": "Aventuras en el entorno natural",
+      "subtitulo": "Actividad 12 · Experiencia tecnopedagógica para educación inicial",
+      "etiqueta": "Exploración",
+      "imagen": "assets/imagenes/exploracion-aventuras.jpg",
+      "objetivo": "Promover la curiosidad, el cuidado del ambiente y la observación del entorno mediante experiencias directas al aire libre.",
+      "descripcion": "Durante una salida o un recorrido seguro, las niñas observan plantas, sonidos, texturas y colores del entorno. Registran sus hallazgos con fotos, dibujos o palabras y conversan sobre cómo cuidar la naturaleza.",
+      "recursos": "Zona verde, lupa, ficha de exploración, cámara del celular o tableta, audios de sonidos naturales y diario digital o impreso de hallazgos.",
+      "inclusion": "Definir una ruta clara, trabajar en parejas de apoyo, ofrecer descansos, usar instrucciones visuales y permitir registrar con dibujo, foto, gesto o palabra."
+    },
+    {
+      "id": "inclusion",
+      "seccion": "Inclusión",
+      "tipo": "estandar",
+      "titulo": "Lineamientos de inclusión",
+      "subtitulo": "Atención integral y participación de población neurodivergente",
+      "imagen": "assets/imagenes/tecnopedagogia-a.jpg",
+      "bloques": [
+        {
+          "t": "lista",
+          "items": [
+            "Anticipar la actividad con imágenes, canciones o una agenda visual.",
+            "Ofrecer varias formas de respuesta: hablar, señalar, dibujar, moverse o elegir una tarjeta.",
+            "Cuidar los estímulos: volumen moderado, tiempos cortos de pantalla y pausas activas.",
+            "Usar instrucciones simples: primero observo, luego hago, después comparto.",
+            "Valorar el proceso, la intención comunicativa y la participación de cada niña.",
+            "Mantener comunicación con las familias para reconocer intereses, apoyos y necesidades."
+          ]
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Principio central",
+          "texto": "Todas las niñas pueden participar si la experiencia se adapta a sus formas de aprender, comunicarse y relacionarse."
+        }
+      ]
+    },
+    {
+      "id": "imprimibles",
+      "seccion": "Recursos imprimibles",
+      "tipo": "estandar",
+      "titulo": "Recursos digitales descargables o imprimibles",
+      "subtitulo": "Material socioemocional para niñas, docentes y familias",
+      "imagen": "assets/imagenes/recursos-imprimibles.jpg",
+      "bloques": [
+        {
+          "t": "h",
+          "texto": "Cómo usarlos"
+        },
+        {
+          "t": "p",
+          "texto": "Las siguientes páginas pueden imprimirse o copiarse en una plataforma digital. Sirven para conversar sobre emociones, autorregulación, escucha y cuidado durante las experiencias de aula."
+        },
+        {
+          "t": "lista",
+          "items": [
+            "Recurso 1: tarjetas de emociones.",
+            "Recurso 2: semáforo de la calma.",
+            "Recurso 3: diario pequeño de exploración y emociones."
+          ]
+        },
+        {
+          "t": "callout",
+          "etiqueta": "Tip tecnopedagógico",
+          "texto": "Digitaliza estos recursos con fotos o escaneo y conviértelos en un juego de memoria, una ruleta o un mural interactivo."
+        }
+      ]
+    },
+    {
+      "id": "imp-emociones",
+      "seccion": "Recursos imprimibles",
+      "tipo": "imprimible-emociones",
+      "titulo": "Imprimible 1: tarjetas de emociones",
+      "subtitulo": "Recorta, plastifica y usa en asamblea o juego de roles",
+      "emociones": [
+        {
+          "cara": "😊",
+          "nombre": "Alegría"
+        },
+        {
+          "cara": "😢",
+          "nombre": "Tristeza"
+        },
+        {
+          "cara": "😠",
+          "nombre": "Enojo"
+        },
+        {
+          "cara": "😐",
+          "nombre": "Calma"
+        },
+        {
+          "cara": "😨",
+          "nombre": "Miedo"
+        },
+        {
+          "cara": "😮",
+          "nombre": "Sorpresa"
+        }
+      ],
+      "pregunta": "Pregunta guía: ¿cuándo me he sentido así y qué necesito en ese momento?"
+    },
+    {
+      "id": "imp-semaforo",
+      "seccion": "Recursos imprimibles",
+      "tipo": "semaforo",
+      "titulo": "Imprimible 2: semáforo de la calma",
+      "subtitulo": "Estrategia visual para la autorregulación emocional",
+      "luces": [
+        {
+          "color": "rojo",
+          "titulo": "Me detengo",
+          "mensaje": "Me detengo, respiro y pido ayuda."
+        },
+        {
+          "color": "amarillo",
+          "titulo": "Pienso",
+          "mensaje": "Pienso y nombro lo que siento."
+        },
+        {
+          "color": "verde",
+          "titulo": "Actúo",
+          "mensaje": "Actúo y elijo una solución amable."
+        }
+      ],
+      "uso": "Uso sugerido: ubicar el semáforo en el rincón de la calma y practicarlo antes de los momentos de conflicto."
+    },
+    {
+      "id": "imp-diario",
+      "seccion": "Recursos imprimibles",
+      "tipo": "imprimible-diario",
+      "titulo": "Imprimible 3: diario de exploración",
+      "subtitulo": "Para registrar lo que veo, siento y descubro",
+      "campos": [
+        {
+          "etiqueta": "Hoy exploré:",
+          "tipo": "lineas",
+          "alto": 3
+        },
+        {
+          "etiqueta": "Dibujo mi hallazgo:",
+          "tipo": "recuadro",
+          "alto": 5
+        },
+        {
+          "etiqueta": "Me sentí:",
+          "tipo": "opciones",
+          "opciones": [
+            "Alegre",
+            "Tranquila",
+            "Curiosa",
+            "Sorprendida",
+            "Otra: ______"
+          ]
+        },
+        {
+          "etiqueta": "Aprendí que:",
+          "tipo": "lineas",
+          "alto": 2
+        }
+      ]
+    },
+    {
+      "id": "glosario",
+      "seccion": "Glosario",
+      "tipo": "glosario",
+      "titulo": "Glosario",
+      "subtitulo": "Haz clic en cada concepto para ver su definición",
+      "terminos": [
+        {
+          "termino": "TIC",
+          "definicion": "Tecnologías de la información y la comunicación usadas con intención educativa."
+        },
+        {
+          "termino": "Tecnopedagogía",
+          "definicion": "Diseño pedagógico que integra recursos digitales, objetivos, mediación y evaluación."
+        },
+        {
+          "termino": "Actividades rectoras",
+          "definicion": "Juego, arte, literatura y exploración del medio como ejes de la educación inicial."
+        },
+        {
+          "termino": "Inclusión",
+          "definicion": "Participación de todos los niños mediante ajustes, apoyos y respeto por la diversidad."
+        },
+        {
+          "termino": "Neurodivergencia",
+          "definicion": "Formas diversas de procesar, comunicar, atender y aprender."
+        },
+        {
+          "termino": "Mediación docente",
+          "definicion": "Acompañamiento intencional que orienta la experiencia y cuida el vínculo."
+        },
+        {
+          "termino": "Desarrollo socioemocional",
+          "definicion": "Proceso para reconocer emociones, convivir, autorregularse y construir vínculos."
+        }
+      ]
+    },
+    {
+      "id": "referencias",
+      "seccion": "Referencias APA",
+      "tipo": "referencias",
+      "titulo": "Referencias APA (7.ª edición)",
+      "subtitulo": "Fuentes que fundamentan la cartilla",
+      "referencias": [
+        "Calderón Pujadas, F. J. (2019). Impacto de las nuevas tecnologías en la masificación de la educación. Revista Scientific, 4(Especial), 173-187.",
+        "Departamento Nacional de Planeación. (2019). CONPES 3975: Política nacional para la transformación digital e inteligencia artificial.",
+        "Fiallo Moncayo, D. X. (2022). La tecnopedagogía como factor para el desarrollo de la calidad académica. Alfa Publicaciones, 4(1.1), 78-93.",
+        "Guaña Moya, J., Arteaga-Alcívar, Y., & Cedeño Zambrano, M. E. (2023). Ventajas y desventajas del uso de herramientas de inteligencia artificial en la educación. Revista Tecnopedagogías e Innovación, 2(2), 6-26.",
+        "Ministerio de Educación Nacional. (2021). Guía pedagógica para la mediación docente en el uso de internet.",
+        "Morales Mantilla, S. M., & Pedraza Ramírez, C. E. (2023). Educadores infantiles en la era digital: las TIC en la educación inicial en Colombia. Perspectivas, 8(S1), 421-432.",
+        "Ortiz, M., Mejía, I., Ramírez, A., & Casillas, M. (2019). La integración de Colombia a la sociedad de la información. RevIISE, 14(14), 73-86."
+      ]
+    },
+    {
+      "id": "referencias-comp",
+      "seccion": "Referencias APA",
+      "tipo": "referencias",
+      "titulo": "Referencias complementarias APA",
+      "subtitulo": "Documentos institucionales de apoyo",
+      "referencias": [
+        "Ministerio de Educación Nacional de Colombia. (2021). Guía pedagógica para la mediación docente en el uso de internet.",
+        "UNESCO. (2023). Technology in education: A tool on whose terms? Global Education Monitoring Report.",
+        "UNESCO. (s. f.). AI and technologies in education. Digital education.",
+        "Centro Regional para el Fomento del Libro en América Latina y el Caribe. (2019). Dosier: Lectura digital en la primera infancia.",
+        "Centro Regional para el Fomento del Libro en América Latina y el Caribe. (2020). Anidando entre palabras: Orientaciones para el fomento de la lectura en la primera infancia.",
+        "Ministerio de Educación Nacional. (2017). Bases curriculares para la educación inicial y preescolar."
+      ]
+    }
+  ]
+}

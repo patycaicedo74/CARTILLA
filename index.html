@@ -3,58 +3,479 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cartilla digital interactiva sobre el uso pedagógico de las TIC y las actividades rectoras en la educación inicial: juego, arte, literatura, exploración del medio e inclusión." />
-  <meta name="theme-color" content="#6c8cff" />
-  <title>Cartilla Digital Interactiva</title>
+  <meta name="description" content="Conexiones de aprendizaje: cartilla interactiva para docentes de 1.º a 3.º de primaria sobre cómo identificar la dislexia en el aula, con estrategias y actividades didácticas." />
+  <meta name="theme-color" content="#512885" />
+  <title>Conexiones de aprendizaje · Dislexia en el aula</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Montserrat:wght@700;800&family=Mouse+Memoirs&family=Open+Sans:wght@400;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ====================== BARRA SUPERIOR / NAVEGACIÓN ====================== -->
-  <header class="topbar" role="banner">
-    <a class="brand" href="#portada" data-nav="inicio" aria-label="Ir al inicio de la cartilla">
-      <span class="brand__logo" aria-hidden="true">🌈</span>
-      <span class="brand__name">Cartilla Digital Interactiva</span>
-    </a>
+  <!-- ====================== SÍMBOLOS SVG REUTILIZABLES ====================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="sym-blob" viewBox="0 0 300 200">
+        <path d="M0 0H300C300 40 270 70 225 66C178 62 160 92 150 128C138 176 92 206 50 186C20 172 6 150 0 140Z" />
+      </symbol>
+      <symbol id="sym-scribble" viewBox="0 0 300 320">
+        <path fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"
+          d="M212 136Q167 235 135 232T48 91T158 138T150 193T108 215T178 75T260 138T144 281T63 76T146 136T219 244T73 213T114 95T256 152T110 260T79 130T175 122T173 221T59 242T152 51T229 197T132 236T128 129T188 139T252 256T78 218T154 134T217 142T133 277" />
+      </symbol>
+      <symbol id="sym-hex" viewBox="0 0 100 88">
+        <path d="M25 2H75L98 44L75 86H25L2 44Z" />
+      </symbol>
+    </defs>
+  </svg>
 
-    <nav class="nav" aria-label="Navegación principal de la cartilla">
-      <button class="nav__btn" type="button" data-nav="inicio" aria-label="Ir al inicio">
-        <span aria-hidden="true">🏠</span> Inicio
-      </button>
-      <button class="nav__btn" type="button" data-nav="indice" aria-label="Ir al índice">
-        <span aria-hidden="true">📑</span> Índice
-      </button>
-      <button class="nav__btn" type="button" data-nav="prev" aria-label="Página anterior">
-        <span aria-hidden="true">⬅️</span> Anterior
-      </button>
-      <button class="nav__btn nav__btn--primary" type="button" data-nav="next" aria-label="Página siguiente">
-        Siguiente <span aria-hidden="true">➡️</span>
-      </button>
-    </nav>
-  </header>
-
-  <!-- Barra de progreso de lectura -->
+  <!-- ====================== VISOR DE DIAPOSITIVAS ====================== -->
   <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
 
-  <!-- ====================== CONTENIDO PRINCIPAL ====================== -->
-  <main id="app" class="app" role="main" tabindex="-1" aria-live="polite">
-    <!-- Las páginas se generan dinámicamente desde data/contenido.json -->
+  <main id="app" class="viewport" tabindex="-1">
+    <div class="stage" id="stage">
+
+      <!-- ============ 1. PORTADA ============ -->
+      <section class="slide s-portada" data-id="portada" data-title="Portada">
+        <div class="deco p-pink"></div>
+        <div class="deco p-circle"></div>
+        <div class="deco p-disk"></div>
+        <img class="deco p-brain an an-pop" src="assets/canva/cerebro-grande.png" alt="" style="--d:.5s" />
+        <div class="blk p-band an an-left" style="left:0;top:296px;width:1280px;height:200px">
+          <h1 class="p-title">Conexiones de aprendizaje</h1>
+        </div>
+        <div class="deco p-lines"><i></i><i></i><i></i></div>
+        <div class="blk p-band2 an an-right" style="left:0;top:508px;width:1280px;height:64px;--d:.25s">
+          <p>Cómo identificar la dislexia en el aula</p>
+        </div>
+        <div class="blk p-foot" style="left:0;top:636px;width:1280px;height:84px">
+          <span class="logo-dislexia logo-dislexia--big" aria-label="Dislexia">D<i>ı</i>S<b>L</b><b>E</b>X<i>ı</i>A</span>
+          <button class="btn-start" type="button" data-goto="autores">Entrar a la cartilla ▶</button>
+        </div>
+      </section>
+
+      <!-- ============ 2. AUTORES ============ -->
+      <section class="slide s-std" data-id="autores" data-title="Autores">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <h2 class="blk t-big an an-left" style="left:96px;top:190px">AUTORES</h2>
+        <div class="deco au-band"></div>
+        <ul class="blk au-names" style="left:96px;top:330px;width:560px">
+          <li class="an an-left" style="--d:.15s">Diana Vanessa Garcia Pineda <span>ID: 996438</span></li>
+          <li class="an an-left" style="--d:.25s">Keila Rocio Rojas Palomino <span>ID: 929199</span></li>
+          <li class="an an-left" style="--d:.35s">Claudia Patricia Polo Caicedo <span>ID: 935895</span></li>
+          <li class="an an-left" style="--d:.45s">Estefany Milena Ordoñez Lopez <span>ID: 870695</span></li>
+          <li class="an an-left" style="--d:.55s">Janit Esther Álvarez Pereira <span>ID: 943939</span></li>
+        </ul>
+        <div class="blk au-card an an-pop" style="left:640px;top:240px;width:700px;height:490px;--d:.4s">
+          <div class="au-card__in">
+            <p><b>Diplomado:</b> Dificultades del Aprendizaje</p>
+            <p><b>Equipo:</b> ####################</p>
+            <p><b>Dificultad abordada:</b> Dislexia</p>
+            <p><b>Fecha de entrega:</b> 19 de octubre de 2026</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. INTRODUCCIÓN ============ -->
+      <section class="slide s-std" data-id="introduccion" data-title="Introducción">
+        <div class="blk in-panel" style="left:-20px;top:54px;width:560px;height:700px">
+          <h3 class="in-panel__t an an-down">¿Qué encontrarás?</h3>
+          <nav class="in-list" aria-label="Contenido de la cartilla">
+            <button class="in-card an an-left" style="--d:.1s" data-goto="que-es"><span>01</span>¿Qué es la dislexia?</button>
+            <button class="in-card an an-left" style="--d:.2s" data-goto="senales-edades"><span>02</span>Señales de alerta</button>
+            <button class="in-card an an-left" style="--d:.3s" data-goto="factores"><span>03</span>Factores: riesgo y protección</button>
+            <button class="in-card an an-left" style="--d:.4s" data-goto="impacto"><span>04</span>Impacto en el aula</button>
+            <button class="in-card an an-left" style="--d:.5s" data-goto="estrategias"><span>05</span>Estrategias</button>
+          </nav>
+        </div>
+        <h2 class="blk t-big an an-down" style="left:655px;top:120px">INTRODUCCIÓN</h2>
+        <div class="blk in-text an an-up" style="left:655px;top:258px;width:520px;--d:.3s">
+          <p>La dislexia es una dificultad específica del aprendizaje que afecta la lectoescritura. No tiene relación con la inteligencia ni con la falta de esfuerzo, sino con la manera en la cual el cerebro procesa el lenguaje escrito.</p>
+          <p>Esta cartilla está dirigida a docentes de 1° a 3° de básica primaria, quienes día a día acompañan los procesos iniciales de lectura y escritura y pueden convertirse en los primeros observadores de las señales de alerta.</p>
+          <p>Aquí encontrarás información clara sobre qué es la dislexia, cómo identificarla a tiempo, qué factores influyen, cómo impacta el aprendizaje y, sobre todo, estrategias y actividades listas para aplicar en el aula.</p>
+        </div>
+        <div class="deco in-peach"></div>
+      </section>
+
+      <!-- ============ 4. ¿QUÉ ES LA DISLEXIA? ============ -->
+      <section class="slide s-std" data-id="que-es" data-title="¿Qué es la dislexia?">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <h2 class="blk t-big t-big--md an an-down" style="left:74px;top:120px">¿QUÉ ES LA DISLEXIA?</h2>
+        <div class="blk qe-box an an-up" style="left:74px;top:230px;width:990px;--d:.2s">
+          <p>Se manifiesta en dificultades para reconocer y leer palabras con precisión y fluidez, relacionar los sonidos del habla con las letras y adquirir las habilidades de lectoescritura (ASANDIS, 2010).</p>
+          <p>Tiene una base neurobiológica: el cerebro procesa el lenguaje escrito de manera diferente, especialmente en las áreas del hemisferio izquierdo encargadas del procesamiento fonológico (D'Mello &amp; Gabrieli, 2018).</p>
+        </div>
+        <div class="blk mr-panel mr-panel--mito an an-left" style="left:-10px;top:418px;width:660px;height:320px;--d:.35s">
+          <h3>MITO</h3>
+          <p class="mr-hint">👆 Toca un mito para descubrir la realidad</p>
+          <div class="mr-grid">
+            <button class="mr-pill" data-mr="1"><span>01</span>Falta de inteligencia</button>
+            <button class="mr-pill" data-mr="3"><span>03</span>Se quita con el tiempo</button>
+            <button class="mr-pill" data-mr="2"><span>02</span>Es pereza</button>
+            <button class="mr-pill" data-mr="4"><span>04</span>Problemas visuales</button>
+          </div>
+        </div>
+        <div class="blk mr-panel mr-panel--real an an-right" style="left:655px;top:400px;width:640px;height:340px;--d:.45s">
+          <h3>REALIDAD</h3>
+          <div class="mr-grid">
+            <div class="mr-pill" data-mr="1"><span>01</span>No está afectada la inteligencia</div>
+            <div class="mr-pill" data-mr="3"><span>03</span>Requiere acompañamiento e intervención</div>
+            <div class="mr-pill" data-mr="2"><span>02</span>Mayor esfuerzo para leer</div>
+            <div class="mr-pill" data-mr="4"><span>04</span>Base neurobiológica y lingüística</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 5. TIPOS DE DISLEXIA ============ -->
+      <section class="slide s-std" data-id="tipos" data-title="Tipos de dislexia">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <svg class="deco scribble" style="left:40px;top:300px;width:300px;height:320px"><use href="#sym-scribble" /></svg>
+        <div class="deco blob-br"></div>
+        <h2 class="blk t-big t-big--sm an an-down" style="left:162px;top:172px">TIPOS DE DISLEXIA</h2>
+        <div class="blk tp-card an an-up" style="left:112px;top:245px;width:1065px;height:405px;--d:.2s">
+          <div class="tp-in">
+            <button class="tp-row" type="button"><span class="tp-name"><i>01</i>Fonológica</span><span class="tp-desc">Dificultad en la lectura de nuevas palabras o pseudopalabras.</span></button>
+            <button class="tp-row" type="button"><span class="tp-name"><i>02</i>Superficial</span><span class="tp-desc">Dificultad en el reconocimiento de palabras conocidas de forma global.</span></button>
+            <button class="tp-row" type="button"><span class="tp-name"><i>03</i>Mixta o profunda</span><span class="tp-desc">Dificultades en la fonología y visualmente.</span></button>
+          </div>
+        </div>
+        <div class="deco tp-brain an an-pop" style="--d:.6s"><img src="assets/canva/cerebro-rosa.png" alt="" /></div>
+      </section>
+
+      <!-- ============ 6. SEÑALES POR EDADES ============ -->
+      <section class="slide s-std" data-id="senales-edades" data-title="Señales de alerta por edades">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <div class="blk sg-panel an an-left" style="left:-30px;top:90px;width:500px;height:680px">
+          <h2>Señales<br />de alerta</h2>
+          <span class="sg-pill">POR EDADES</span>
+        </div>
+        <svg class="deco sg-path" viewBox="0 0 60 720" preserveAspectRatio="none"><path d="M30 0C0 60 60 120 30 180S0 300 30 360 60 480 30 540 0 660 30 720" /></svg>
+        <div class="blk sg-item an an-right" style="left:560px;top:90px;width:510px;--d:.3s">
+          <span class="sg-num sg-num--pink">1</span>
+          <img class="sg-photo" src="assets/canva/foto-preescolar.png" alt="Niño pintando con crayones" />
+          <div class="sg-card sg-card--pink">
+            <h3>Preescolar (4 a 5 años)</h3>
+            <ul>
+              <li>Dificultad en el aprendizaje de rimas y canciones.</li>
+              <li>Confusión en la pronunciación de palabras largas.</li>
+              <li>Bajo interés por cuentos.</li>
+              <li>Dificultad en el reconocimiento del nombre propio escrito.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="blk sg-item an an-right" style="left:560px;top:370px;width:510px;--d:.6s">
+          <span class="sg-num sg-num--lime">2</span>
+          <img class="sg-photo" src="assets/canva/foto-primaria.png" alt="Niña escribiendo en el aula" />
+          <div class="sg-card sg-card--lime">
+            <h3>Primaria temprana (6 a 9 años)</h3>
+            <ul>
+              <li>Lectura lenta y frecuentemente con errores.</li>
+              <li>Confunde las letras similares (b/d, p/q).</li>
+              <li>Omisión o cambio de sílabas durante la lectura o escritura.</li>
+              <li>Dificultad para copiar del tablero.</li>
+              <li>Escritura desordenada o ilegible.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 7. SEÑALES EMOCIONALES ============ -->
+      <section class="slide s-std" data-id="senales-emocionales" data-title="Señales emocionales">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <div class="blk sg-panel an an-left" style="left:-30px;top:90px;width:500px;height:680px">
+          <h2>Señales</h2>
+          <span class="sg-pill">EMOCIONALES</span>
+        </div>
+        <svg class="deco sg-path" viewBox="0 0 60 720" preserveAspectRatio="none"><path d="M30 0C0 60 60 120 30 180S0 300 30 360 60 480 30 540 0 660 30 720" /></svg>
+        <div class="blk sg-item sg-item--tall an an-right" style="left:560px;top:155px;width:510px;--d:.3s">
+          <span class="sg-num sg-num--pink">1</span>
+          <img class="sg-photo" src="assets/canva/foto-emocional.png" alt="Niño sonriendo" />
+          <div class="sg-card sg-card--pink">
+            <ul class="sg-emo">
+              <li><b>Evadir</b> la lectura en voz alta.</li>
+              <li><b>Frustración</b> con facilidad frente a tareas de lectura.</li>
+              <li><b>Expresa</b>: “no me gusta leer” o “soy malo para esto”.</li>
+              <li>Baja <b>autoestima</b> escolar.</li>
+            </ul>
+          </div>
+        </div>
+        <img class="deco em-figs an an-pop" style="--d:.8s" src="assets/canva/figuras.png" alt="" />
+      </section>
+
+      <!-- ============ 8. PREVALENCIA ============ -->
+      <section class="slide s-std" data-id="prevalencia" data-title="Prevalencia">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <div class="blk pv-panel an an-left" style="left:-30px;top:95px;width:510px;height:680px">
+          <h2>Prevalencia</h2>
+          <p class="pv-note">Una revisión internacional de 56 estudios (Yang et al., 2022) estimó que aproximadamente <b class="pv-count" data-to="7">7</b> de cada 100 estudiantes de primaria podrían presentar dislexia del desarrollo.</p>
+        </div>
+        <div class="blk pv-crowd an an-pop" style="left:530px;top:160px;width:450px;height:410px;--d:.3s">
+          <img src="assets/canva/siluetas.png" alt="Siluetas de estudiantes; algunas resaltadas en color" />
+        </div>
+        <div class="deco pv-wine"></div>
+        <div class="blk pv-circle an an-pop" style="left:1000px;top:260px;width:350px;height:350px;--d:.6s">
+          <p>En un aula de clase de</p>
+          <div class="pv-calc">
+            <button type="button" data-pv="-1" aria-label="Menos estudiantes">−</button>
+            <output id="pvTotal">30</output>
+            <button type="button" data-pv="1" aria-label="Más estudiantes">+</button>
+          </div>
+          <p>estudiantes, podrían haber <b id="pvRes">2</b> <span id="pvLabel">infantes</span> con esta dificultad.</p>
+        </div>
+      </section>
+
+      <!-- ============ 9. FACTORES ============ -->
+      <section class="slide s-std" data-id="factores" data-title="Factores de riesgo y protección">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <div class="deco fc-dome"></div>
+        <h2 class="blk fc-title an an-down" style="left:440px;top:58px;width:400px">FACTORES</h2>
+        <div class="blk fc-panel fc-panel--r an an-left" style="left:0;top:232px;width:620px;height:500px;--d:.2s">
+          <span class="fc-tag">Riesgo</span>
+          <ul class="fc-list">
+            <li style="--x:0"><span class="fc-hex">🧬</span><p>Antecedentes familiares<small>40 % entre hermanos; 49 % si alguno de los padres la tienen (Jaén, 2019)</small></p></li>
+            <li style="--x:150px"><span class="fc-hex">🧠</span><p>Bases neurobiológicas</p></li>
+            <li style="--x:10px"><span class="fc-hex">📢</span><p>Dificultades en la conciencia fonológica</p></li>
+            <li style="--x:110px"><span class="fc-hex">⏰</span><p>Baja estimulación temprana</p></li>
+            <li style="--x:60px"><span class="fc-hex">😟</span><p>Experiencias de fracaso repetidas</p></li>
+          </ul>
+        </div>
+        <div class="blk fc-panel fc-panel--p an an-right" style="left:625px;top:232px;width:670px;height:500px;--d:.35s">
+          <span class="fc-tag">Protección</span>
+          <ul class="fc-list">
+            <li style="--x:0"><p>Detección temprana</p><span class="fc-hex">🔍</span></li>
+            <li style="--x:0"><p>Intervención pedagógica oportuna</p><span class="fc-hex">🧑‍🏫</span></li>
+            <li style="--x:0"><p>Apoyo de la familia</p><span class="fc-hex">👨‍👩‍👧</span></li>
+            <li style="--x:0"><p>Ambiente escolar inclusivo</p><span class="fc-hex">🏫</span></li>
+            <li style="--x:0"><p>Trabajo interdisciplinario</p><span class="fc-hex">🤝</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ 10. IMPACTO ============ -->
+      <section class="slide s-std" data-id="impacto" data-title="Impacto en el aula">
+        <div class="deco im-navy"></div>
+        <p class="blk quote an an-down" style="left:240px;top:54px;width:860px">"La dislexia no determina la capacidad de aprender. Con el acompañamiento adecuado, el estudiante puede desarrollar todo su potencial."</p>
+        <div class="blk im-wheel an an-pop" style="left:0;top:120px;width:540px;height:540px;--d:.2s">
+          <svg viewBox="0 0 540 540" aria-hidden="true">
+            <path class="im-seg" data-im="1" fill="#fe9a3a" d="M230 70A200 200 0 0 1 403 170L230 270Z" />
+            <path class="im-seg" data-im="2" fill="#784997" d="M403 170A200 200 0 0 1 403 370L230 270Z" />
+            <path class="im-seg" data-im="3" fill="#e56e7e" d="M403 370A200 200 0 0 1 230 470L230 270Z" />
+          </svg>
+          <span class="im-ico" style="left:300px;top:110px">📚</span>
+          <span class="im-ico" style="left:350px;top:236px">🧑‍🤝‍🧑</span>
+          <span class="im-ico" style="left:300px;top:362px">😟</span>
+          <div class="im-center">IMPACTO</div>
+        </div>
+        <div class="blk im-rows" style="left:440px;top:150px;width:660px">
+          <div class="im-row an an-right" data-im="1" style="--d:.3s">
+            <button type="button" class="im-label"><i>1</i><span>Académico</span></button>
+            <ul class="im-bub"><li>Lectura lenta</li><li>Errores de escritura</li><li>Baja comprensión</li><li>Mayor tiempo en tareas</li></ul>
+          </div>
+          <div class="im-row an an-right" data-im="2" style="--d:.45s">
+            <button type="button" class="im-label"><i>2</i><span>Social</span></button>
+            <ul class="im-bub"><li>Evita participar</li><li>Miedo a leer en voz alta</li><li>Burlas o comparaciones</li><li>Aislamiento</li></ul>
+          </div>
+          <div class="im-row an an-right" data-im="3" style="--d:.6s">
+            <button type="button" class="im-label"><i>3</i><span>Emocional</span></button>
+            <ul class="im-bub"><li>Frustración</li><li>Baja autoestima</li><li>Ansiedad</li><li>Desmotivación</li></ul>
+          </div>
+        </div>
+        <div class="deco blob-mint"></div>
+      </section>
+
+      <!-- ============ 11. ENFOQUE INTERDISCIPLINARIO ============ -->
+      <section class="slide s-std" data-id="enfoque" data-title="Enfoque interdisciplinario">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <p class="blk quote an an-down" style="left:240px;top:54px;width:860px">"El docente no diagnostica: detecta, apoya y activa la ruta de acompañamiento."</p>
+        <div class="blk ef-hex an an-pop" style="left:0;top:112px;width:620px;height:546px;--d:.2s">
+          <img src="assets/canva/hexagono.png" alt="Hexágono con los actores del acompañamiento: docente, familia, psicología, fonoaudiología e institución" />
+          <svg viewBox="0 0 550 485" aria-hidden="true">
+            <polygon class="ef-seg" data-ef="1" points="275,241 130,8 420,8" />
+            <polygon class="ef-seg" data-ef="5" points="275,241 545,241 420,475" />
+            <polygon class="ef-seg" data-ef="4" points="275,241 420,475 130,475" />
+            <polygon class="ef-seg" data-ef="3" points="275,241 130,475 5,241" />
+            <polygon class="ef-seg" data-ef="2" points="275,241 5,241 130,8" />
+          </svg>
+        </div>
+        <div class="deco ef-rail"></div>
+        <ol class="blk ef-list" style="left:660px;top:180px;width:520px">
+          <li class="an an-right" data-ef="1" style="--d:.3s;--c:#84c225"><i>01</i><b>Docente</b><span>Detecta, adapta y registra.</span></li>
+          <li class="an an-right" data-ef="2" style="--d:.4s;--c:#f2708a"><i>02</i><b>Familia</b><span>Apoya y da continuidad en la casa.</span></li>
+          <li class="an an-right" data-ef="3" style="--d:.5s;--c:#f5a00f"><i>03</i><b>Psicología</b><span>Valora aspectos emocionales y cognitivos.</span></li>
+          <li class="an an-right" data-ef="4" style="--d:.6s;--c:#1fb5a4"><i>04</i><b>Fonoaudiología</b><span>Fortalece el lenguaje y la conciencia fonológica.</span></li>
+          <li class="an an-right" data-ef="5" style="--d:.7s;--c:#784997"><i>05</i><b>Institución</b><span>Facilita la comunicación y el debido seguimiento.</span></li>
+        </ol>
+        <div class="blk ef-side" style="left:1178px;top:150px;width:102px;height:532px"><span>Enfoque Interdisciplinario</span></div>
+      </section>
+
+      <!-- ============ 12. ESTRATEGIAS DIDÁCTICAS ============ -->
+      <section class="slide s-std s-navy" data-id="estrategias" data-title="Estrategias didácticas">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <svg class="deco scribble scribble--dark" style="left:30px;top:270px;width:360px;height:380px"><use href="#sym-scribble" /></svg>
+        <h2 class="blk es-title an an-down" style="left:320px;top:180px;width:640px">ESTRATEGIAS<br />DIDÁCTICAS</h2>
+        <img class="blk es-go an an-pop" style="left:565px;top:356px;width:200px;--d:.4s" src="assets/canva/letsgo.png" alt="Let's go!" />
+        <button class="blk btn-start btn-start--glow an an-up" style="left:500px;top:530px;width:330px;--d:.7s" type="button" data-goto="propuesta">¡Comenzar las actividades! ▶</button>
+      </section>
+
+      <!-- ============ 13. PRESENTACIÓN DE LA PROPUESTA ============ -->
+      <section class="slide s-std s-tpl" data-id="propuesta" data-title="Cada letra cuenta, cada logro importa" data-section="Estrategias didácticas">
+        <h2 class="blk tpl-title an an-down" style="left:330px;top:64px;width:740px">Cada letra cuenta, cada logro importa</h2>
+        <p class="blk tpl-sub an an-down" style="left:330px;top:126px;width:740px;--d:.1s">Propuestas de ejercicios y estrategias pedagógicas aplicables para acompañar a estudiantes con dislexia.</p>
+        <figure class="blk tpl-photo an an-pop" style="left:40px;top:200px;width:300px;--d:.3s">
+          <img src="assets/act/portada-propuesta.jpg" alt="Niñas y niños leyendo y escribiendo juntos en el aula" />
+        </figure>
+        <div class="blk tpl-box an an-up" style="left:360px;top:200px;width:860px;height:445px;--d:.2s">
+          <div class="tpl-scroll">
+            <p>Esta cartilla está dirigida a docentes que trabajan con estudiantes de 1.º, 2.º y 3.º de primaria que presentan dificultades en la lectura y la escritura relacionadas con la dislexia. Contiene actividades sencillas, ilustradas, lúdicas y adaptables a las necesidades de cada niño, para que puedan aprender sin sentirse presionados.</p>
+            <p>La idea principal es que los niños aprendan jugando, reconozcan sus avances y comprendan que cada uno tiene su propio ritmo de aprendizaje. Las actividades pueden desarrollarse en el aula, en pequeños grupos o con el acompañamiento de la familia.</p>
+            <div class="flip-grid">
+              <button class="flip" type="button"><span class="flip__f">👩‍🏫<b>Dirigida a</b></span><span class="flip__b">Docentes de 1.º a 3.º de primaria.</span></button>
+              <button class="flip" type="button"><span class="flip__f">📚<b>Área</b></span><span class="flip__b">Lengua Castellana y procesos de lectoescritura.</span></button>
+              <button class="flip" type="button"><span class="flip__f">🧩<b>Metodología</b></span><span class="flip__b">Juegos, imágenes, lectura guiada, repetición, movimiento y escritura progresiva.</span></button>
+              <button class="flip" type="button"><span class="flip__f">⏱️<b>Duración</b></span><span class="flip__b">De 15 a 25 minutos por actividad, según las necesidades del estudiante.</span></button>
+            </div>
+            <p class="tpl-hint">👆 Toca cada tarjeta para darle la vuelta.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 14. TABLERO DE ACTIVIDADES ============ -->
+      <section class="slide s-std s-tpl" data-id="actividades" data-title="Actividades didácticas ilustradas" data-section="Estrategias didácticas">
+        <h2 class="blk tpl-title an an-down" style="left:330px;top:64px;width:740px">Actividades didácticas ilustradas</h2>
+        <p class="blk tpl-sub an an-down" style="left:330px;top:126px;width:740px;--d:.1s">Elige una actividad: cada tarjeta abre su guía para el docente y un juego interactivo.</p>
+        <div class="blk tpl-box an an-up" style="left:110px;top:200px;width:1110px;height:445px;--d:.2s">
+          <div class="tpl-scroll"><div class="board" id="board"></div></div>
+        </div>
+      </section>
+
+      <!-- Las diapositivas 15 a 29 (actividades 1 a 15) se generan desde script.js -->
+
+      <!-- ============ 30. SEMÁFORO ============ -->
+      <section class="slide s-std s-tpl" data-id="semaforo" data-title="Mi semáforo del aprendizaje" data-section="Estrategias didácticas">
+        <h2 class="blk tpl-title an an-down" style="left:330px;top:64px;width:740px">Mi semáforo del aprendizaje</h2>
+        <p class="blk tpl-sub an an-down" style="left:330px;top:126px;width:740px;--d:.1s"><b>Actividad complementaria.</b> Esta actividad ayuda a los estudiantes a expresar cómo se sienten durante los ejercicios, sin temor a equivocarse.</p>
+        <figure class="blk tpl-photo an an-pop" style="left:40px;top:200px;width:300px;--d:.3s">
+          <img src="assets/act/semaforo.jpg" alt="Semáforo de emociones con caras roja, amarilla y verde" />
+        </figure>
+        <div class="blk tpl-box an an-up" style="left:360px;top:200px;width:860px;height:445px;--d:.2s">
+          <div class="tpl-scroll sem">
+            <div class="sem__light" role="group" aria-label="Semáforo">
+              <button type="button" class="sem__b sem__b--r" data-sem="r" aria-label="Rojo">😟</button>
+              <button type="button" class="sem__b sem__b--a" data-sem="a" aria-label="Amarillo">🤔</button>
+              <button type="button" class="sem__b sem__b--v" data-sem="v" aria-label="Verde">😄</button>
+            </div>
+            <div class="sem__info">
+              <p class="sem__msg" id="semMsg">👆 Toca una luz del semáforo: ¿cómo te sientes con la actividad?</p>
+              <ul class="sem__list">
+                <li><b class="dot dot--v"></b><b>Verde:</b> entendí y puedo intentarlo solo.</li>
+                <li><b class="dot dot--a"></b><b>Amarillo:</b> necesito un poco de ayuda.</li>
+                <li><b class="dot dot--r"></b><b>Rojo:</b> todavía me cuesta y necesito que me expliquen de otra manera.</li>
+              </ul>
+              <p class="callout">El docente escucha las respuestas y adapta la actividad cuando sea necesario. El semáforo no debe utilizarse para calificar ni comparar a los niños.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 31. RECOMENDACIONES ============ -->
+      <section class="slide s-std s-tpl" data-id="recomendaciones" data-title="Recomendaciones para docentes y familias" data-section="Estrategias didácticas">
+        <h2 class="blk tpl-title an an-down" style="left:330px;top:64px;width:740px">Recomendaciones para docentes y familias</h2>
+        <p class="blk tpl-sub an an-down" style="left:330px;top:126px;width:740px;--d:.1s">👆 Toca cada tarjeta para leer la recomendación.</p>
+        <div class="blk tpl-box an an-up" style="left:110px;top:200px;width:1110px;height:445px;--d:.2s">
+          <div class="tpl-scroll">
+            <div class="rec-grid">
+              <button class="rec" type="button"><img src="assets/act/rec-1.jpg" alt="" /><b>1. Dar instrucciones cortas</b><span>Explicar un paso a la vez y comprobar que el estudiante haya entendido qué debe hacer.</span></button>
+              <button class="rec" type="button"><img src="assets/act/rec-2.jpg" alt="" /><b>2. Utilizar varios sentidos</b><span>Combinar sonidos, imágenes, letras que se puedan tocar, movimiento y escritura para facilitar la asociación entre letras y sonidos.</span></button>
+              <button class="rec" type="button"><img src="assets/act/rec-3.jpg" alt="" /><b>3. Reconocer el esfuerzo</b><span>Valorar los avances pequeños, evitar las comparaciones y permitir pausas cuando el niño se sienta cansado o frustrado.</span></button>
+              <button class="rec" type="button"><img src="assets/act/rec-4.jpg" alt="" /><b>4. Trabajar en equipo</b><span>Mantener una comunicación cercana entre docentes, familias y profesionales de apoyo cuando corresponda, para ajustar las estrategias a las necesidades del estudiante.</span></button>
+            </div>
+            <p class="callout">También es importante recordar que estas actividades son apoyos pedagógicos y no sustituyen una valoración profesional. Si las dificultades persisten, conviene coordinar el acompañamiento con los profesionales correspondientes y con la institución educativa.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 32. INSTRUMENTO DE EVALUACIÓN ============ -->
+      <section class="slide s-std s-tpl" data-id="evaluacion" data-title="Instrumento para evaluar los avances" data-section="Estrategias didácticas">
+        <h2 class="blk tpl-title an an-down" style="left:330px;top:64px;width:740px">Instrumento sencillo para evaluar los avances</h2>
+        <p class="blk tpl-sub an an-down" style="left:330px;top:126px;width:740px;--d:.1s">Este registro permite hacer seguimiento individual sin comparar a un niño con otro. Marca el nivel observado en cada habilidad.</p>
+        <div class="blk tpl-box an an-up" style="left:110px;top:200px;width:1110px;height:445px;--d:.2s">
+          <div class="tpl-scroll">
+            <div class="ev-head">
+              <label>Estudiante: <input type="text" id="evNombre" placeholder="Nombre" autocomplete="off" /></label>
+              <label>Fecha: <input type="date" id="evFecha" /></label>
+            </div>
+            <table class="ev-table" id="evTable">
+              <thead><tr><th scope="col">Habilidad</th><th scope="col">Lo realiza con apoyo</th><th scope="col">Está en proceso</th><th scope="col">Lo realiza con mayor autonomía</th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <div class="ev-actions">
+              <button type="button" class="btn" id="evCopy">📋 Copiar registro de evaluación</button>
+              <button type="button" class="btn btn--ghost" id="evPrint">🖨️ Imprimir</button>
+              <button type="button" class="btn btn--ghost" id="evClear">🧹 Limpiar</button>
+              <span class="ev-status" id="evStatus" role="status"></span>
+            </div>
+            <p class="callout">La evaluación debe repetirse periódicamente para observar el progreso del estudiante, identificar qué apoyos le funcionan y decidir qué habilidades necesitan más práctica.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 33. CIERRE ============ -->
+      <section class="slide s-std s-tpl" data-id="cierre" data-title="¡Cada niño aprende a su ritmo!" data-section="Estrategias didácticas">
+        <div class="blk tpl-box tpl-box--center an an-up" style="left:180px;top:120px;width:920px;height:525px">
+          <img class="ci-img" src="assets/act/cierre.jpg" alt="Niños felices leyendo un libro gigante entre nubes y arcoíris" />
+          <h2 class="ci-title">¡Cada niño aprende a su ritmo!</h2>
+          <p class="ci-text">Con paciencia, comprensión y oportunidades, cada pequeño avance se convierte en un gran logro.</p>
+          <button type="button" class="btn" id="btnConfeti">🎉 Celebrar los logros</button>
+        </div>
+      </section>
+
+      <!-- ============ 34. REFERENCIAS: LIBROS ============ -->
+      <section class="slide s-std s-ref" data-id="referencias" data-title="Referencias: libros">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <svg class="deco scribble" style="left:250px;top:250px;width:260px;height:300px"><use href="#sym-scribble" /></svg>
+        <div class="blk rf-side an an-left" style="left:0;top:96px;width:350px;height:555px">
+          <div class="rf-label">REFERENCIAS</div>
+          <span class="rf-arrow" aria-hidden="true">↑</span>
+        </div>
+        <div class="blk rf-box an an-up" style="left:368px;top:96px;width:842px;height:555px;--d:.2s">
+          <h2>LIBROS</h2>
+          <ol class="rf-list">
+            <li><b>L1</b> Hudson, D. (2017). <i>Dificultades específicas de aprendizaje y otros trastornos: Guía básica para docentes</i> (S. Alcina Zayas, Trad.). Narcea Ediciones.</li>
+            <li><b>L2</b> Asociación Madrid con la Dislexia y otras DEA &amp; ANPE-Madrid, sindicato independiente. (2014). <i>La dislexia en el aula.</i> <a href="https://fenacerci.pt/web/publicacoes/outras/GUIA-DISLEXIA-COMPLETA_14.pdf" target="_blank" rel="noopener">https://fenacerci.pt/web/publicacoes/outras/GUIA-DISLEXIA-COMPLETA_14.pdf</a></li>
+            <li><b>L3</b> Angulo Domínguez, M. D. C., Ocampos, J. G., Luque Vilaseca, J. L., Rodríguez Romero, M. D. P., Sánchez Cantero, R., Satorras Fioretti, R. M., Vázquez Uceda, M., Junta de Andalucía, Consejería de Educación, Dirección General de Participación e Innovación Educativa, &amp; Cúbica Multimedia, S.L. (2010). <i>Manual de atención al alumnado con necesidades específicas de apoyo educativo derivadas de dificultades específicas de aprendizaje: dislexia.</i> Junta de Andalucía. <a href="https://pavlov.psyciencia.com/2012/10/Guia-para-ninos-y-ninas-con-dislexia.pdf" target="_blank" rel="noopener">https://pavlov.psyciencia.com/2012/10/Guia-para-ninos-y-ninas-con-dislexia.pdf</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ 35. REFERENCIAS: REVISTAS ============ -->
+      <section class="slide s-std s-ref" data-id="referencias-revistas" data-title="Referencias: revistas científicas">
+        <svg class="deco blob-tl"><use href="#sym-blob" /></svg>
+        <svg class="deco scribble" style="left:250px;top:250px;width:260px;height:300px"><use href="#sym-scribble" /></svg>
+        <div class="blk rf-side an an-left" style="left:0;top:96px;width:350px;height:555px">
+          <div class="rf-label">REFERENCIAS</div>
+          <span class="rf-arrow" aria-hidden="true">↑</span>
+        </div>
+        <div class="blk rf-box an an-up" style="left:368px;top:96px;width:842px;height:555px;--d:.2s">
+          <h2>REVISTAS CIENTÍFICAS</h2>
+          <ol class="rf-list">
+            <li><b>A1</b> Bastidas González, K. A., Jumbo Jumbo, F. V., Mazón Vera, V. S., &amp; Bastidas González, L. D. (2023). La dislexia: rol del docente en el diagnóstico precoz en estudiantes de educación básica. <i>Ciencia Latina Revista Científica Multidisciplinar, 7</i>(1), 9191–9208. <a href="https://doi.org/10.37811/cl_rcm.v7i1.5112" target="_blank" rel="noopener">https://doi.org/10.37811/cl_rcm.v7i1.5112</a></li>
+            <li><b>A2</b> Tamayo Lorenzo, S. (2017). La dislexia y las dificultades en la adquisición de la lectoescritura. <i>Profesorado, Revista de Currículum y Formación del Profesorado, 21</i>(1), 423–432. <a href="https://doi.org/10.30827/profesorado.v21i1.10372" target="_blank" rel="noopener">https://doi.org/10.30827/profesorado.v21i1.10372</a></li>
+            <li><b>A3</b> Yang, L., Li, C., Li, X., Zhai, M., An, Q., Zhang, Y., Zhao, J., &amp; Weng, X. (2022). Prevalence of developmental dyslexia in primary school children: A systematic review and meta-analysis. <i>Brain Sciences, 12</i>(2), 240. <a href="https://doi.org/10.3390/brainsci12020240" target="_blank" rel="noopener">https://doi.org/10.3390/brainsci12020240</a></li>
+            <li><b>A4</b> Snowling, M. J., Hulme, C., &amp; Nation, K. (2020). Defining and understanding dyslexia: Past, present and future. <i>Oxford Review of Education, 46</i>(4), 501–513. <a href="https://doi.org/10.1080/03054985.2020.1765756" target="_blank" rel="noopener">https://doi.org/10.1080/03054985.2020.1765756</a></li>
+          </ol>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- Indicador de página + navegación inferior -->
-  <div class="pager" role="navigation" aria-label="Navegación entre páginas">
-    <button class="pager__btn" type="button" data-nav="prev" aria-label="Página anterior">⬅️ Anterior</button>
-    <span class="pager__count" id="pagerCount" aria-live="polite"></span>
-    <button class="pager__btn" type="button" data-nav="next" aria-label="Página siguiente">Siguiente ➡️</button>
-  </div>
-
-  <!-- ====================== PIE DE PÁGINA ====================== -->
-  <footer class="footer" role="contentinfo">
-    <p>Cartilla Digital Interactiva · Educación inicial · TIC, juego, arte, literatura, exploración del medio e inclusión.</p>
-    <p class="footer__small">Hecha para abrirse desde cualquier dispositivo. Usa el índice o las flechas para navegar.</p>
-  </footer>
+  <!-- ====================== CONTROLES ====================== -->
+  <nav class="controls" aria-label="Navegación entre diapositivas">
+    <button class="ctl" type="button" data-nav="prev" aria-label="Diapositiva anterior">◀</button>
+    <button class="ctl ctl--wide" type="button" data-nav="menu" aria-label="Abrir índice de diapositivas">☰ <span>Índice</span></button>
+    <span class="ctl-count" id="pagerCount" aria-live="polite"></span>
+    <button class="ctl" type="button" data-nav="full" aria-label="Pantalla completa">⛶</button>
+    <button class="ctl" type="button" data-nav="next" aria-label="Diapositiva siguiente">▶</button>
+  </nav>
 
   <!-- ====================== MODAL REUTILIZABLE ====================== -->
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
@@ -65,6 +486,9 @@
       <div class="modal__body" id="modalBody"></div>
     </div>
   </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>

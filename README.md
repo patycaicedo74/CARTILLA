@@ -1,76 +1,49 @@
-# Cartilla Digital Interactiva
+# Conexiones de aprendizaje · Cartilla interactiva sobre dislexia
 
-Cartilla web estática e interactiva para educación inicial sobre el uso pedagógico de las TIC, el juego, el arte, la literatura, la exploración del medio y la inclusión.
+Cartilla web interactiva para docentes de 1.º a 3.º de primaria: **cómo identificar la dislexia en el aula** y **estrategias didácticas** con 15 actividades jugables.
 
-El sitio está pensado para publicarse en GitHub Pages y funciona en celular, tablet y computador. Incluye navegación por páginas, índice interactivo, tarjetas desplegables, glosario, semáforo de la calma y recursos imprimibles.
+Reproduce el formato de la presentación de Canva (colores, tipografías, barra superior, insignia del cerebro y numeración) y le agrega movimiento e interacción. Funciona en computador, tablet y celular, y se publica con GitHub Pages.
 
-## Estructura de carpetas
+## Orden de las diapositivas
+
+| N.º | Contenido |
+| --- | --- |
+| 1–11 | Primera parte (Canva): portada, autores, introducción, ¿qué es la dislexia?, tipos, señales de alerta por edades y emocionales, prevalencia, factores, impacto y enfoque interdisciplinario |
+| 12 | Estrategias didácticas («Let's go!») |
+| 13 | Presentación de la propuesta: «Cada letra cuenta, cada logro importa» |
+| 14 | Tablero de actividades |
+| 15–29 | Actividades 1 a 15 (guía para el docente + juego interactivo) |
+| 30 | Mi semáforo del aprendizaje |
+| 31 | Recomendaciones para docentes y familias |
+| 32 | Instrumento para evaluar los avances (se puede marcar, copiar e imprimir) |
+| 33 | Cierre |
+| 34–35 | Referencias (libros y revistas científicas) |
+
+## Estructura
 
 ```text
 CARTILLA/
-├── index.html              # Estructura principal del sitio
-├── style.css               # Estilos visuales, responsive, accesibles e impresión
-├── script.js               # Motor de navegación e interacciones
-├── data/
-│   └── contenido.json      # Textos, páginas, actividades y referencias
-├── assets/
-│   └── imagenes/           # Imágenes usadas por la cartilla
-└── README.md               # Documentación del proyecto
+├── index.html     # Diapositivas de Canva, semáforo, recomendaciones, evaluación, cierre y referencias
+├── style.css      # Formato de Canva (lienzo 1280 × 720), animaciones, modo celular e impresión
+├── script.js      # Navegación, actividades (contenido + juegos) e interacciones
+└── assets/
+    ├── canva/     # Elementos gráficos tomados de la presentación de Canva
+    └── act/       # Ilustraciones de las actividades
 ```
 
-## Cómo verla localmente
+## Cómo editar
 
-Como el contenido se carga con `fetch`, abre la cartilla desde un servidor estático y no directamente con doble clic sobre `index.html`.
+- **Textos de las diapositivas de Canva, semáforo, recomendaciones y referencias:** en `index.html`.
+- **Actividades:** en el arreglo `ACTIVIDADES` de `script.js` (título, objetivo, materiales, pasos, ejemplo, adaptación por grado y evaluación). Cada actividad indica qué juego usa (`juego`).
 
-Desde esta carpeta ejecuta:
+## Navegación
+
+Flechas ◀ ▶, teclado (← →), deslizar en pantallas táctiles, botón **Índice** y enlaces directos (por ejemplo `#actividad-3`). Los botones 🔊 leen en voz alta con la voz del navegador.
+
+## Verla localmente
 
 ```bash
 python -m http.server
 ```
 
-Luego abre en el navegador:
-
-```text
-http://localhost:8000
-```
-
-## Cómo editar el contenido
-
-Todo el texto editable vive en `data/contenido.json`. Allí se definen el título general, el índice y el arreglo `paginas`.
-
-Tipos principales de página:
-
-- `portada`: página inicial con título, lema, botones e imagen.
-- `indice`: índice interactivo que navega a las secciones.
-- `estandar`: página de contenido con bloques de texto, listas, chips, callouts, tablas o tarjetas.
-- `reflexion`: página con contenido y modal de reflexión ampliada.
-- `actividad`: página con paneles desplegables de objetivo, descripción, recursos e inclusión.
-- `semaforo`: recurso interactivo del semáforo de la calma.
-- `glosario`: acordeón de términos y definiciones.
-- `imprimible-emociones`: tarjetas recortables de emociones.
-- `imprimible-diario`: diario imprimible con líneas, recuadros y opciones.
-- `referencias`: listado de referencias en formato visual tipo APA.
-
-Tipos de bloque usados dentro de páginas `estandar` o `reflexion`:
-
-- `p`: párrafo.
-- `h`: subtítulo interno.
-- `lista`: lista de elementos.
-- `chips`: insignias breves.
-- `callout`: caja destacada.
-- `tarjetas`: tarjetas desplegables.
-- `tabla`: tabla con encabezados y filas.
-
-Para agregar imágenes nuevas, guárdalas en `assets/imagenes/` y referencia la ruta desde el campo `imagen` o `imagenSecundaria` del JSON.
-
-## Actualizar cambios en GitHub
-
-Después de editar, revisa el sitio localmente y publica los cambios con:
-
-```bash
-git add . && git commit -m "Actualiza cartilla digital" && git push
-```
-
-## Accesibilidad y dispositivos
-
-La hoja de estilos usa contraste legible, estados `:focus-visible`, botones con áreas táctiles amplias, diseño mobile-first, soporte para `prefers-reduced-motion` y reglas `@media print` para imprimir los recursos.
+Abrir `http://localhost:8000`.
